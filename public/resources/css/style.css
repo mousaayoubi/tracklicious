@@ -75,3 +75,11 @@ body {
     font-size: 0.9rem;
     padding-bottom: 2%;
 }
+
+footer {
+    color: white;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 0.75rem;
+    padding-top: 5%;
+}
