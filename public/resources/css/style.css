@@ -26,6 +26,7 @@ html {
 }
 
 body {
+    background-color: rgb(35, 2, 63);
     font-family: Arial, sans-serif;
     height: 100%;
 }
@@ -33,7 +34,6 @@ body {
 /* LANDING */
 
 .container-fluid {
-    background-color: rgb(35, 2, 63);
     text-align: center;
     height: 100%;
     padding-top: 10%;
@@ -81,5 +81,6 @@ footer {
     text-align: center;
     font-family: "Work Sans";
     font-size: 0.75rem;
-    padding-top: 5%;
+    padding-top: 10%;
+    margin-bottom: 10%;
 }
