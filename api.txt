@@ -1,0 +1,4 @@
+Application name	Tracklicious
+API key	c6d6c533633ac3e1bae24c739adbed04
+Shared secret	e9ef3da61e1d46117b0ee962afe0bc51
+Registered to	mousaayoubi
