@@ -7,7 +7,7 @@ $(document).ready(function() {
         console.log("I'm activated");
     };
     $.ajax({
-        url: "http://ws.audioscrobbler.com/2.0/?method=track.search&track="+title+"&api_key="+api_key+"&format=json",
+        url: "https://ws.audioscrobbler.com/2.0/?method=track.search&track="+title+"&api_key="+api_key+"&format=json",
         success: function(result) {
             console.log(result);
             var newResult = JSON.stringify(result);
