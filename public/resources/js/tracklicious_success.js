@@ -11,8 +11,32 @@ $(document).ready(function() {
         success: function(result) {
             console.log("API connection is successfull");
             console.log(result);
-            var newResult = JSON.stringify(result);
-            $(".ajax_results").append(newResult);
+            var result_obj = result;
+            var n = result_obj.results.trackmatches.track.length;
+            console.log(n);
+            for (i=0; i < n; i++) {
+                $("#results").append(
+                    '<a href=' + result_obj.results.trackmatches.track[i].url + ' target="_blank">' +
+                    '<div class="row songs" id="songs">' +
+                    '<div class="col-sm-1 play-icon">' +
+                        '<i class="far fa-play-circle"></i>' +
+                    '</div>' +
+                    '<div class="col-sm-4 songs-title">' +
+                    result_obj.results.trackmatches.track[i].name +
+                    '</div>' +
+                    '<div class="col-sm-3 songs-title">' +
+                    result_obj.results.trackmatches.track[i].artist +
+                    '</div>' +
+                    '<div class="col-sm-2 songs-title" id="song-image">' +
+                    '<img src='+result_obj.results.trackmatches.track[i].image[1]["#text"]+'>' +
+                    '</div>' +
+                    '<div class="col-sm-2 songs-title">' +
+                    numeral(result_obj.results.trackmatches.track[i].listeners).format('0, 0') +
+                    '</div>' +
+                    '</div>' +
+                    '</a>'
+                    );
+            }
         }
     });
 })

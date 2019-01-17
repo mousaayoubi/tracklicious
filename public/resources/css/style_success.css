@@ -1,3 +1,12 @@
+/* latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/QGYsz_wNahGAdqQ43Rh_fKDp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* UNIVERSAL */
 
 body {
@@ -45,6 +54,7 @@ a:hover {
 
 .row.playlist {
   background-color: rgb(104, 0, 255);
+  border-bottom: 1px solid grey;
   padding: 1% 2%;
   font-family: "Work Sans";
 }
@@ -53,20 +63,29 @@ a:hover {
   color: rgb(255, 255, 255);
 }
 
+/* RESULTS */
+
 .row.songs {
-  background-color: rgb(0, 0, 0);
-  padding: 1% 2%;
-  font-family: "Work Sans";
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
 }
 
-.play-icon {
-  color: rgb(255, 0, 171);
+.row.songs:hover {
+  background-color: lightgrey;
 }
 
 .songs-title {
-  color: rgb(47, 79, 79);
+  padding-top: 1%;
+  color: grey;
+  font-family: "Work Sans";
 }
 
-#results {
-  background-color: white;
-}  
+#song-image {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.play-icon {
+  padding-top: 1%;
+  color: rgb(255, 0, 171);
+}
