@@ -11,6 +11,7 @@
 
 body {
   font-size: 16px;
+  font-family: "Work Sans", Arial, sans-serif;
 }
 
 .row {
@@ -36,18 +37,28 @@ a:hover {
   text-decoration: none;
 }
 
-.form-control.header {
-  border-radius: 20px;
+.form-control {
+  border-radius: 0.75rem;
 }
 
-.btn.header {
-  border-radius: 20px;
-  width: 75px;
+.btn {
   background-color: rgb(255, 102, 204);
+  border-radius: 0.75rem;
+  color: white;
+  border: none;
+  width: 75px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
 }
 
-.btn.header:hover {
+.btn:hover {
+  color: white;
   background-color: rgb(255, 0, 171);
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+  background-color: rgb(255, 0, 171);
+  border-color: rgb(255, 0, 171);
 }
 
 /* PLAYLIST */
