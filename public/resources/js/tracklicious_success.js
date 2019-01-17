@@ -9,6 +9,7 @@ $(document).ready(function() {
     $.ajax({
         url: "https://ws.audioscrobbler.com/2.0/?method=track.search&track="+title+"&api_key="+api_key+"&format=json",
         success: function(result) {
+            console.log("API connection is successfull");
             console.log(result);
             var newResult = JSON.stringify(result);
             $(".ajax_results").append(newResult);
