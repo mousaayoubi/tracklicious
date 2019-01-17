@@ -5,6 +5,7 @@ $(document).ready(function() {
                 localStorage.setItem("songTitle", $(".form-control").val());
                 event.preventDefault();
                 window.open("./success.html", "_self");
+                return false;
             }
         });
         localStorage.setItem("songTitle", $(".form-control").val());
