@@ -2,13 +2,11 @@ $(document).ready(function() {
     var api_key = "c6d6c533633ac3e1bae24c739adbed04";
 
     let title = localStorage.getItem("songTitle");
-    console.log(title);
     renderTracks(title);
 
     $(".btn").click(function(){
         event.preventDefault();
         let title = $(".form-control").val();
-        console.log(title);
         renderTracks(title);
     });
 
